@@ -1,20 +1,20 @@
 import { useState } from 'react';
 
 export default function Form() {
-  let firstName = '';
-  let lastName = '';
+  let [firstName, setFName] = useState('');
+  let [lastName, setLName] = useState('');
 
   function handleFirstNameChange(e) {
-    firstName = e.target.value;
+    setFName(e.target.value);
   }
 
   function handleLastNameChange(e) {
-    lastName = e.target.value;
+    setLName(e.target.value);
   }
 
   function handleReset() {
-    firstName = '';
-    lastName = '';
+    setFName('');
+    setLName('');
   }
 
   return (

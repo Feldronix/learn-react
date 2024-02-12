@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import Profile from './components/profile'
 import List from './qcomps/list_keys_id'
 import RecipeList from './qcomps/recipes'
+import MenuBar from './qcomps/menuBar'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Profile />
         <List />
         <RecipeList />
+        <MenuBar />
     </div>
   )
 }
